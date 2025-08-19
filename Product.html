@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-Moka- モカB | 雛人形商品ページ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Header -->
+        <header class="header">
+            <div class="header-top">
+                       <div class="mobile-menu-btn"
+                            onclick="toggleMobileMenu()">
+                        
+                            <span></span>
+                            <span></span>
+                        </div>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Logo">
+                </div>
+
+                <nav class="main-nav">
+                    <a href="#">雛人形</a>
+                    <a href="#">五月人形</a>
+                    <a href="#">羽子板</a>
+                    <a href="#">破魔弓</a>
+                    <a href="#">手芸材料</a>
+                    <a href="#">盆ちょうちん</a>
+                </nav>
+
+                <div class="header-right">
+                    <div class="header-info">
+                        <span>店舗案内</span>
+                        <span>カタログ請求</span>
+                        <span><img src="assets/LineIcon.png" alt></span>
+                        <span class="icon"><img src="assets/mail.png"
+                                alt></span>
+                        <div class="phone-number">
+                            <span class="icon"><img src="assets/phone.png"
+                                    alt></span>
+                            <div class="phone-text">048-758-2008</div>
+                        </div>
+                    </div>
+
+                    <div class="nav-container">
+
+                        <div class="social-icons">
+                            <div class="social-icon"> <span class="icon"><img
+                                        src="assets/search.png" alt></span>
+                            </div>
+                            <div class="social-icon"> <span class="icon"><img
+                                        src="assets/person.png" alt></span>
+                            </div>
+                            <div class="social-icon"> <span class="icon"><img
+                                        src="assets/cart.png" alt></span>
+                            </div>
+                        </div>
+
+                 
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Navigation -->
+         <nav class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-header">
+                <div class="logo"><img src="./assets/logo.png" alt=""></div>
+                <div class="close-btn" onclick="toggleMobileMenu()">✕</div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-box"
+                    placeholder="お探しの商品は何ですか？">
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    雛人形 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="6 15 12 9 18 15"></polyline>
+</svg>
+</span>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li>ケース飾り</li>
+                    <li>収納飾り</li>
+                    <li>親王飾り</li>
+                    <li>五人飾り</li>
+                    <li>十五人飾り</li>
+                    <li>木目込み人形飾り</li>
+                </ul>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    五月人形 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg></span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    羽子板 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg></span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    破魔弓 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg></span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    手芸材料 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+</span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">ご利用ガイド</div>
+                <ul class="mobile-nav-list">
+                    <li>配送・送料について</li>
+                    <li>返品について</li>
+                    <li>支払い方法について</li>
+                    <li>特定商取引法に基づく表記</li>
+                    <li>プライバシーポリシー</li>
+                    <li>お問い合わせ</li>
+                </ul>
+            </div>
+        </nav>
+    <!-- Breadcrumb Navigation -->
+   <div class="mokab-breadcrumb">
+        <span class="mokab-breadcrumb-home">TOP</span>
+        <div class="mokab-breadcrumb-separator"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="9 6 15 12 9 18"></polyline>
+</svg>
+</div>
+        <span class="mokab-breadcrumb-current">カタログ請求</span>
+    </div>
+
+    <!-- Main Product Section -->
+    <div class="mokab-product-container">
+        <!-- Main Product Image -->
+        <div class="mokab-main-image">
+            <img src="assets/Mokab.png" alt="Moka B 雛人形メイン画像" />
+        </div>
+
+        <!-- Product Information -->
+        <div class="mokab-product-info">
+            <div class="mokab-title-section">
+                <h1 class="mokab-product-title">-Moka-　モカB</h1>
+                <div class="mokab-product-code">型番AAA</div>
+            </div>
+            
+            <div class="mokab-price">44,800円(税込)</div>
+            
+            <div class="mokab-form-section">
+                <div class="mokab-product-type">
+                    <label class="mokab-label">商品タイプ</label>
+                    <div class="mokab-select-wrapper">
+                        <select class="mokab-select">
+                            <option>モカB</option>
+                        </select>
+                        <div class="mokab-select-arrow"></div>
+                    </div>
+                </div>
+                
+                <div class="mokab-quantity">
+                    <label class="mokab-label">購入数</label>
+                    <input type="number" class="mokab-quantity-input" value="1" min="1" />
+                </div>
+            </div>
+            
+            <div class="mokab-action-buttons">
+                <button class="mokab-add-cart">
+                    <div class="mokab-cart-icon"><img src="assets/Whitecart.png" alt=""></div>
+                    <span>カートにいれる</span>
+                </button>
+                <button class="mokab-add-favorite">
+                    <div class="mokab-heart-icon"><img src="assets/blackHeart.png" alt=""></div>
+                    <span>お気に入りに追加する</span>
+                </button>
+            </div>
+            
+            <div class="mokab-inquiry-section">
+                <div class="mokab-inquiry-text">この商品について問い合わせる</div>
+                <img class="mokab-inquiry-decoration" src="assets/ProductSocial.png" alt="装飾ライン" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Thumbnails -->
+    <div class="mokab-thumbnails-grid">
+        <img class="mokab-thumbnail active" src="assets/Mokab.png" alt="サムネイル1" />
+        <img class="mokab-thumbnail" src="assets/mokabsub1.png" alt="サムネイル2" />
+        <img class="mokab-thumbnail" src="assets/mokabsub2.png" alt="サムネイル3" />
+        <img class="mokab-thumbnail" src="assets/mokabsub3.png" alt="サムネイル4" />
+        <img class="mokab-thumbnail" src="assets/mokabsub4.png" alt="サムネイル5" />
+        <img class="mokab-thumbnail" src="assets/mokabsub5.png" alt="サムネイル6" />
+        <img class="mokab-thumbnail" src="assets/mokabsub6.png" alt="サムネイル7" />
+        <img class="mokab-thumbnail" src="assets/mokabsub7.png" alt="サムネイル8" />
+        <img class="mokab-thumbnail" src="assets/mokabsub8.png" alt="サムネイル9" />
+        <img class="mokab-thumbnail" src="assets/mokabsub9.png" alt="サムネイル10" />
+    </div>
+
+    <!-- Floating Cart Button -->
+    <div class="mokab-floating-cart">
+        <div class="mokab-floating-icon"><img src="assets/Whitecart.png" alt=""></div>
+        <div class="mokab-floating-text">カートに<br/>いれる</div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="mokab-tab-navigation">
+  <div class="mokab-tab active">
+    <span>商品特徴</span>
+    <div class="mokab-tab-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           width="14" height="14" viewBox="0 0 24 24" 
+           fill="none" stroke="currentColor" stroke-width="2" 
+           stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </div>
+  <div class="mokab-tab">
+    <span>サイズ・詳細</span>
+    <div class="mokab-tab-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           width="14" height="14" viewBox="0 0 24 24" 
+           fill="none" stroke="currentColor" stroke-width="2" 
+           stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </div>
+  <div class="mokab-tab">
+    <span>ご購入特典</span>
+    <div class="mokab-tab-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           width="14" height="14" viewBox="0 0 24 24" 
+           fill="none" stroke="currentColor" stroke-width="2" 
+           stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Large Product Display -->
+    <div class="mokab-showcase-image">
+        <img src="assets/MokabShow.png" alt="雛人形大型展示画像" />
+    </div>
+
+    <!-- Product Features Section -->
+    <div class="mokab-features-section">
+        <div class="mokab-features-content">
+            <h2 class="mokab-features-title">優しい微笑みに心和む、美しきお雛様</h2>
+            <p class="mokab-features-description">
+                お顔の表情は、お雛様の命。優しい微笑を浮かべたお雛様のお顔は、見ているだけで幸せな気持ちになります。
+                優しく微笑むお顔が魅力のお人形に、職人が仕立てた豪華絢爛な衣裳を丁寧に着せつけました。お姫様のかさねもボリュームたっぷりで、見応えのある美しい仕上がりご家族皆様でお楽しみいただけるお雛様となっております。
+            </p>
+        </div>
+    </div>
+
+    <!-- Product Details Grid -->
+    <div class="mokab-details-grid">
+        <div class="mokab-detail-item">
+            <img src="assets/Mokabdetail1.png" alt="お雛様詳細1" />
+            <p class="mokab-detail-text">洋室にも合うような淡い色合いのお衣装。<br/>お殿様とお揃いの金襴を使用しています。</p>
+        </div>
+        <div class="mokab-detail-item">
+            <img src="assets/Mokabdetail2.png" alt="御殿様詳細" />
+            <p class="mokab-detail-text">御殿様の説明文がはいります</p>
+        </div>
+        <div class="mokab-detail-item">
+            <img src="assets/Mokabdetail3.png" alt="ぼんぼり詳細" />
+            <p class="mokab-detail-text">ぼんぼりは、ほんのり明るく光ります。</p>
+        </div>
+        <div class="mokab-detail-item">
+            <img src="assets/Mokabdetail4.png" alt="アクリルケース詳細" />
+            <p class="mokab-detail-text">軽量で割れにくいアクリルケース。<br/>ホコリからお人形を守り、お手入れも簡単です。</p>
+        </div>
+    </div>
+
+    <!-- Small Images Row -->
+    <div class="mokab-small-images">
+        <img src="assets/mokabSmall.png" alt="追加画像1" />
+        <img src="assets/mokabSmall1.png" alt="追加画像2" />
+        <img src="assets/mokabSmall2.png" alt="追加画像3" />
+    </div>
+
+    <!-- Uesugi Kenshin Model Section -->
+    <div class="mokab-uesugi-model-section">
+        <h3 class="mokab-uesugi-title">上杉謙信モデル</h3>
+    </div>
+
+    <!-- Size Details Section -->
+    <div class="mokab-size-section">
+        <h2 class="mokab-section-title">サイズ・詳細</h2>
+        <div class="mokab-section-subtitle">Size & Details</div>
+    </div>
+
+    <!-- Size Details Image -->
+    <div class="mokab-size-image">
+        <img src="assets/MokabSize.png" alt="サイズ詳細図" />
+    </div>
+
+    <!-- Specifications Table -->
+    <div class="mokab-specs-table">
+        <div class="mokab-spec-row">
+            <div class="mokab-spec-label">品番</div>
+            <div class="mokab-spec-value">000000000</div>
+        </div>
+        <div class="mokab-spec-row">
+            <div class="mokab-spec-label">同梱物</div>
+            <div class="mokab-spec-value">オリジナルネーム木札・お手入れセット</div>
+        </div>
+        <div class="mokab-spec-row">
+            <div class="mokab-spec-label">サイズ</div>
+            <div class="mokab-spec-value">間口47×奥行26×高さ35.5(cm)</div>
+        </div>
+        <div class="mokab-spec-row">
+            <div class="mokab-spec-label">お届け目安</div>
+            <div class="mokab-spec-value">羽子板 破魔弓 雛人形 五月人形 のお届けは、日時をご指定いただくことができます。ご指定の無い場合は、大安・友引の吉日にお届け致します。お急ぎの場合は、お問い合わせください。</div>
+        </div>
+    </div>
+
+   <div style="background-color: #F5F2EC; padding:40px 0px">
+     <!-- Benefits Section -->
+    <div class="mokab-benefits-section">
+        <h2 class="mokab-section-title">ご購入特典</h2>
+        <div class="mokab-section-subtitle">benefits</div>
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="mokab-benefits-grid">
+        <div class="mokab-benefit-item">
+            <img src="assets/Benefit1.png" alt="オリジナル木札" />
+            <div class="mokab-benefit-content">
+                <h4 class="mokab-benefit-title">オリジナル木札</h4>
+                <p class="mokab-benefit-text">高級感あふれる木製立札は、焼印仕上げによる立体仕上げです。</p>
+            </div>
+        </div>
+        <div class="mokab-benefit-item">
+            <img src="assets/Benefit2.png" alt="お手入れセット" />
+            <div class="mokab-benefit-content">
+                <h4 class="mokab-benefit-title">お手入れセット</h4>
+                <p class="mokab-benefit-text">ほこりを払うための羽ばたきや拭布、お顔や金属部分を触る際の手袋入り</p>
+            </div>
+        </div>
+        <div class="mokab-benefit-item">
+            <img src="assets/Benefit3.png" alt="ギフト包装" />
+            <div class="mokab-benefit-content">
+                <h4 class="mokab-benefit-title">ギフト包装</h4>
+                <p class="mokab-benefit-text">お祝いの気持ちを込めて包装紙をお付けしてお送りします。</p>
+            </div>
+        </div>
+        <div class="mokab-benefit-item">
+            <img src="assets/Benefit4.png" alt="熨斗" />
+            <div class="mokab-benefit-content">
+                <h4 class="mokab-benefit-title">熨斗（ご希望の方のみ）</h4>
+                <p class="mokab-benefit-text">贈答用に名入れも承ります。<br/>※熨斗・名入れをご希望の方はご注文画面にて選択をしてください。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notice Section -->
+    <div class="mokab-notice-section">
+        <div class="mokab-notice-decoration">
+            <div class="mokab-notice-dots">
+                <img src="assets/aboutDecor.png" height="50" width="70" alt="">
+            </div>
+            <h4 class="mokab-notice-title">ご購入の際の注意事項</h4>
+        </div>
+        <p class="mokab-notice-text">
+            商品写真は、限りなく実物の商品に近づけるよう最新技術を導入しおりますが、お客様のモニター等の環境により多少色合いが異なる場合がございますので、予めご了承ください。
+        </p>
+    </div>
+   </div>
+
+   <section id="repair-support">
+  <div class="content ">
+    <h2>ご購入後も安心、修繕対応承ります</h2>
+    <p>破損・汚れ・部品の不具合など、お困りの際はお気軽にご相談ください。専門スタッフが丁寧に対応いたします。</p>
+    <a href="#" class="button">修繕のご相談はこちら</a>
+  </div>
+</section>
+
+    <!-- About Section -->
+        <section class="about-section">
+            <div class="about-image-left">
+                <img src="assets/about1.png" alt="工房の様子">
+            </div>
+            <div class="about-left">
+                <div>
+                    <img src="assets/aboutDecor.png" alt>
+                </div>
+                <div class="about-title">
+                    <div class="vertical-title">節句人形</div>
+                    <div class="vertical-title">唯一無二の</div>
+                    <div class="vertical-title">岩槻から贈る</div>
+                    <div class="vertical-title">人形の町の</div>
+
+                </div>
+
+                <div class="about-text">
+                    <p>さまざまな種類と価格帯の-節句人形-が揃います</p>
+                    <p>駅前に2店舗を展開し</p>
+                    <p>人形のまち(いわつき埼玉県さいたま市岩槻区)の</p>
+                    <p>昭和26年創業の日本人形の製造卸と小売りの店です
+                    </p>
+                    <p>-曽根人形-にお任せください</p>
+                    <p>伝統の技を守り 手づくりにこだわる</p>
+                    <p>人形の本場 埼玉県岩槻で</p>
+                    <p>岩槻人形'雛人形'三月人形や五月人形</p>
+
+                </div>
+
+            </div>
+
+            <div class="about-image-right">
+                <img src="assets/about2.png" alt="工房の様子">
+            </div>
+        </section>
+
+          <section class="reviews-section">
+    <h2>お客様の声</h2>
+    <p class="subtitle">Reviews</p>
+
+    <div class="reviews-container">
+      <div class="review-card">
+        <h3>お心遣いに感激しました</h3>
+        <p>
+          こちらが指定しなくてもお日柄の良い日に届けていただけて、祖母が喜んでいます。
+          恥ずかしながら、私はお日柄のことを知らなかったのでショップの方の心遣いが嬉しかったです。
+        </p>
+      </div>
+
+      <div class="review-card">
+        <h3>初めての子育て初めての初節句</h3>
+        <p>
+          初正月の羽子板を購入するときにも正栄さんで購入しました。
+          アドバイザーの方に相談すると、親切に教えてくださり、迷いながらも大満足で満足するものを選ぶことができました。
+          お雛様も正栄さんでと決めていました。コンパクトで、インテリアにマッチするものも欲しかったので、イメージ通りのお雛様を見つけられて大満足です！
+        </p>
+      </div>
+
+      <div class="review-card flower">
+  <h3>三姉妹お世話になりました</h3>
+  <p>
+    長女のときに曽根人形の節句アドバイザーさんから「雛人形は子供の身代わり人形」と聞いていたため、姉妹それぞれに用意しました。
+    次女も大きくなり「こっちはお姉ちゃんの、こっちは私のおひなさま」と喜んでいるので、ちゃんとしてよかったと思います。
+  </p>
+  <img src="./assets/flower.png" alt="flower decoration" class="flower-img bottom">
+</div>
+
+    </div>
+  </section>
+ <section class="customer-testimonials-wrapper">
+        <!-- First Testimonial -->
+        <div class="user-feedback-card">
+            <div class="testimonial-content-area">
+                <div class="customer-profile-section">
+                    <div class="profile-header-row">
+                        <div class="user-avatar-container">
+                          <img src="./assets/Avatar.svg" alt="">
+                        </div>
+                        <div class="customer-name-text">ニックネームが入ります</div>
+                        <div class="customer-demographic">20代 女性</div>
+                    </div>
+                    <div class="rating-timestamp-row">
+                     <div class="star-rating-display" style="display: flex; gap: 4px;">
+<img src="assets/fullstar.png" alt="">
+<img src="assets/fullstar.png" alt="">
+<img src="assets/fullstar.png" alt="">
+<img src="assets/halfstar.png" alt="">
+<img src="assets/emptystar.png" alt="">
+
+</div>
+
+                        <div class="post-timestamp">2025/07/29 13:08</div>
+                    </div>
+                </div>
+                <div class="testimonial-text-section">
+                    <div class="feedback-title-text">タイトルが入ります</div>
+                    <div class="feedback-content-text">レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Testimonial with Shop Response -->
+        <div class="user-feedback-card">
+            <div class="testimonial-content-area">
+                <div class="customer-profile-section">
+                    <div class="profile-header-row">
+                        <div class="user-avatar-container">
+                            <img src="./assets/Avatar.svg" alt="">
+                        </div>
+                        <div class="customer-name-text">ニックネームが入ります</div>
+                        <div class="customer-demographic">20代 女性</div>
+                    </div>
+                    <div class="rating-timestamp-row">
+                               <div class="star-rating-display" style="display: flex; gap: 4px;">
+<img src="assets/fullstar.png" alt="">
+<img src="assets/fullstar.png" alt="">
+<img src="assets/fullstar.png" alt="">
+<img src="assets/halfstar.png" alt="">
+<img src="assets/emptystar.png" alt="">
+
+</div>
+                        <div class="post-timestamp">2025/07/29 13:08</div>
+                    </div>
+                </div>
+                <div class="testimonial-text-section">
+                    <div class="feedback-title-text">タイトルが入ります</div>
+                    <div class="feedback-content-text">レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。レビュー内容です。</div>
+                </div>
+                <div class="shop-response-section">
+                    <div class="shop-response-title">ショップからのコメント</div>
+                    <div class="shop-response-content">レビューの返信が入ります。レビューの返信が入ります。レビューの返信が入ります。レビューの返信が入ります。レビューの返信が入ります。レビューの返信が入ります。レビューの返信が入ります。</div>
+                    <div class="shop-response-timestamp">2025/07/29 17:14</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post Review Button -->
+        <div class="submit-feedback-button-container">
+            <button class="post-testimonial-btn">
+                <div class="button-indicator-dot"></div>
+                <div class="button-label-text">レビューを投稿する</div>
+            </button>
+        </div>
+    </section>
+
+  <!-- Section 2: Repair Support -->
+<section id="repair-support1">
+  <img src="./assets/Banner1.png" alt="Repair Support Background" class="bg-img" />
+  <div class="content">
+    <h2 style="font-weight: 100;">ご不明点や疑問点など、どんな些細なご質問でも <br/>
+遠慮なくお問い合わせください。</h2>
+<h3><img src="./assets/phone.png" alt="">048-758-2008</h3>
+    <p>受付時間：9:00〜18:00</p>
+  <div style="gap: 16px;" class="display">
+      <a href="#" class="button"><img style="padding-right: 4px;" src="./assets/mailWhite.png" alt="">メールでお問い合わせ</a>
+        <a href="#" class="button"><img style="padding-right: 4px;" src="./assets/LineIcon.png" alt="">LINEでお問い合わせ</a>
+  </div>
+
+  </div>
+</section>
+  <!-- === Calendar Section === -->
+  <section class="calendar-section">
+    <h2>営業日カレンダー</h2>
+        <p class="subtitle">Calendar</p>
+
+    <p>■…定休日です。</p>
+
+    <div class="calendar-container">
+      <!-- May -->
+      <div class="calendar">
+        <h3>2025年5月</h3>
+        <table>
+          <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+          <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td class="holiday">3</td></tr>
+          <tr><td class="holiday">4</td><td class="holiday">5</td><td class="holiday">6</td><td>7</td><td>8</td><td>9</td><td class="holiday">10</td></tr>
+          <tr><td class="holiday">11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="holiday">17</td></tr>
+          <tr><td class="holiday">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="holiday">24</td></tr>
+          <tr><td class="holiday">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="holiday">31</td></tr>
+        </table>
+      </div>
+
+      <!-- June -->
+      <div class="calendar">
+        <h3>2025年6月</h3>
+        <table>
+          <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+          <tr><td class="holiday">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="holiday">7</td></tr>
+          <tr><td class="holiday">8</td><td>9</td><td>10</td><td class="holiday">11</td><td>12</td><td>13</td><td class="holiday">14</td></tr>
+          <tr><td class="holiday">15</td><td class="holiday">16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="holiday">21</td></tr>
+          <tr><td class="holiday">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Shopping Guide === -->
+  <div class="guide-container">
+    <h2>ご利用ガイド</h2>
+
+    <p class="subtitle">Shopping Guide</p>
+
+    <div class="guide-sections">
+      <!-- Shipping -->
+      <div class="guide-section">
+        <h3>送料について</h3>
+        <p><strong>東京急便</strong><br>配送は東京急便にてお届けいたします。送料は全国一律525円頂いております。1回のお買い上げ商品の合計金額が10,000円以上の場合は送料無料となります。</p>
+        <p><strong>日本急便</strong><br>送料は全国一律525円頂いております。1回のお買い上げ商品の合計金額が10,000円以上の場合は送料無料となります。</p>
+      </div>
+
+      <!-- Returns -->
+      <div class="guide-section">
+        <h3>返品について</h3>
+        <p><strong>不良品</strong><br>商品到着後速やかにご連絡ください。商品に欠陥がある場合を除き、返品には応じかねますのでご了承ください。</p>
+        <p><strong>返品期限</strong><br>商品到着後7日以内とさせていただきます。</p>
+        <p><strong>返品送料</strong><br>お客様都合による返品につきましてはお客様のご負担とさせていただきます。不良品に該当する場合は当方で負担いたします。</p>
+      </div>
+
+      <!-- Payment -->
+      <div class="guide-section">
+        <h3>お支払いについて</h3>
+        <p><strong>商品代引</strong><br>商品が到着しましたら配達員へ商品代金をお支払いください。</p>
+        <p><strong>銀行振込</strong><br>購入後にお送りさせて頂きますご注文確認メールに記載されております弊社指定の銀行口座へご請求金額をお振込み下さい。</p>
+        <p><strong>クレジット</strong><br><img src="./assets/cards.png" alt=""> <br/>
+            がご利用いただけます。分割払い、リボ払い可能です。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- === Footer === -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="./assets/logo.png" alt="Sone Doll Logo">
+        <div class="social-icons2">
+          <img class="social-icons1" src="./assets/Instagram.png" alt=""></a>
+       <img class="social-icons1" src="./assets/facebook.png" alt=""></a>
+        <img class="social-icons1" src="./assets/LineIcon.png" alt=""></a>
+         <img class="social-icons1" src="./assets/Twitter.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">雛人形</a>
+        <a href="#">手芸材料</a>
+        <a href="#">特定商取引法に基づく表記</a>
+        <a href="#">五月人形</a>
+        <a href="#">盆ちょうちん</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">羽子板</a>
+        <a href="#">店舗案内</a>
+        <a href="#">破魔弓</a>
+        <a href="#">カタログ請求</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 soneningyo</p>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="global.js"></script>
+</body>
+</html>

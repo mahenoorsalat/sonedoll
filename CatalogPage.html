@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カタログ請求 - Catalog Request</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Libre+Baskerville:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+      <!-- Header -->
+        <header class="header">
+            <div class="header-top">
+                       <div class="mobile-menu-btn"
+                            onclick="toggleMobileMenu()">
+                        
+                            <span></span>
+                            <span></span>
+                        </div>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Logo">
+                </div>
+
+                <nav class="main-nav">
+                    <a href="#">雛人形</a>
+                    <a href="#">五月人形</a>
+                    <a href="#">羽子板</a>
+                    <a href="#">破魔弓</a>
+                    <a href="#">手芸材料</a>
+                    <a href="#">盆ちょうちん</a>
+                </nav>
+
+                <div class="header-right">
+                    <div class="header-info">
+                        <span>店舗案内</span>
+                        <span>カタログ請求</span>
+                        <span><img src="assets/LineIcon.png" alt></span>
+                        <span class="icon"><img src="assets/mail.png"
+                                alt></span>
+                        <div class="phone-number">
+                            <span class="icon"><img src="assets/phone.png"
+                                    alt></span>
+                            <div class="phone-text">048-758-2008</div>
+                        </div>
+                    </div>
+
+                    <div class="nav-container">
+
+                        <div class="social-icons">
+                            <div class="social-icon"> <span class="icon"><img
+                                        src="assets/search.png" alt></span>
+                            </div>
+                            <div class="social-icon"> <span class="icon"><img
+                                        src="assets/person.png" alt></span>
+                            </div>
+                            <div class="social-icon"> <span class="icon"><img
+                                        src="assets/cart.png" alt></span>
+                            </div>
+                        </div>
+
+                 
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Navigation -->
+          <nav class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-header">
+                <div class="logo"><img src="./assets/logo.png" alt=""></div>
+                <div class="close-btn" onclick="toggleMobileMenu()">✕</div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-box"
+                    placeholder="お探しの商品は何ですか？">
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    雛人形 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="6 15 12 9 18 15"></polyline>
+</svg>
+</span>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li>ケース飾り</li>
+                    <li>収納飾り</li>
+                    <li>親王飾り</li>
+                    <li>五人飾り</li>
+                    <li>十五人飾り</li>
+                    <li>木目込み人形飾り</li>
+                </ul>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    五月人形 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg></span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    羽子板 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg></span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    破魔弓 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg></span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">
+                    手芸材料 <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+</span>
+                </div>
+            </div>
+
+            <div class="mobile-nav-section">
+                <div class="mobile-nav-title">ご利用ガイド</div>
+                <ul class="mobile-nav-list">
+                    <li>配送・送料について</li>
+                    <li>返品について</li>
+                    <li>支払い方法について</li>
+                    <li>特定商取引法に基づく表記</li>
+                    <li>プライバシーポリシー</li>
+                    <li>お問い合わせ</li>
+                </ul>
+            </div>
+        </nav>
+    <!-- Breadcrumb Navigation -->
+    <div class="mokab-breadcrumb">
+        <span class="mokab-breadcrumb-home">TOP</span>
+        <div class="mokab-breadcrumb-separator"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="9 6 15 12 9 18"></polyline>
+</svg>
+</div>
+        <span class="mokab-breadcrumb-current">カタログ請求</span>
+    </div>
+    <div class="catalog-main-container">
+        <!-- Header Section -->
+        <section class="catalog-header-section">
+            <div class="catalog-title-wrapper">
+                <h1 class="catalog-main-title">カタログ請求</h1>
+                <p class="catalog-subtitle-english">Catalog</p>
+            </div>
+            
+            <p class="catalog-description-text">
+                羽子板・破魔弓、雛人形、五月人形、手芸木目込みのカタログをご希望の方は、
+                下記よりダウンロードいただくか、お電話（048-758-2008）、またはお問い合わせフォームにてお申し込みください。
+                送料無料でお送りいたします。
+            </p>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="catalog-products-grid">
+            <div class="catalog-product-card">
+                <div class="catalog-product-image"><img src="./assets/Catalog1.png" alt=""></div>
+                <div class="catalog-product-info">
+                    <h3 class="catalog-product-name">雛人形</h3>
+                    <button class="catalog-download-button" aria-label="雛人形カタログをダウンロード">
+                        <span class="add button">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="catalog-product-card">
+                <div class="catalog-product-image"><img src="./assets/Catalog2.png" alt=""></div>
+                <div class="catalog-product-info">
+                    <h3 class="catalog-product-name">五月人形</h3>
+                    <button class="catalog-download-button" aria-label="五月人形カタログをダウンロード">
+                    <span class="add button">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="catalog-product-card">
+                <div class="catalog-product-image"><img src="./assets/Catalog3.png" alt=""></div>
+                <div class="catalog-product-info">
+                    <h3 class="catalog-product-name">羽子板・破魔弓</h3>
+                    <button class="catalog-download-button" aria-label="羽子板・破魔弓カタログをダウンロード">
+                    <span class="add button">→</span>
+                    </button>
+                </div>
+            </div>
+
+             <div class="catalog-product-card">
+                <div class="catalog-product-image"><img src="./assets/Catalog4.png" alt=""></div>
+                <div class="catalog-product-info">
+                    <h3 class="catalog-product-name">手芸木目込み</h3>
+                    <button class="catalog-download-button" aria-label="手芸木目込みカタログをダウンロード">
+                    <span class="add button">→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+            <!-- Contact Section -->
+<div class="banner1" style="max-width: 1170px;">
+     <div class="catalog-contact-info banner-text">
+                    <h2 class="catalog-contact-title">
+                        カタログ請求・<br/>お問い合わせはこちらから
+                    </h2>
+                    <p class="catalog-contact-description">
+                        ご希望のカタログをダウンロードいただくか、
+                        お電話またはフォームよりお気軽にお申し込みください。
+                        送料無料でお届けいたします。
+                    </p>
+                </div>
+    <div class="catalog-contact-buttons">
+                    <a href="mailto:info@example.com" class="catalog-email-button">
+                        <div class="catalog-email-icon"><img src="./assets/mailWhite.png" alt=""></div>
+                        メールでお問い合わせ
+                    </a>
+                    
+                    <a href="#" class="catalog-line-button">
+                        <div class="catalog-line-icon"><img src="./assets/LineIcon.png" alt=""></div>
+                      
+                        LINEでお問い合わせ
+                    </a>
+                </div>
+  </div>
+     <!-- Section 2: Repair Support -->
+  <section id="repair-support1">
+  <img src="./assets/Banner1.png" alt="Repair Support Background" class="bg-img" />
+  <div class="content">
+    <h2 style="font-weight: 100;">ご不明点や疑問点など、どんな些細なご質問でも <br/>
+遠慮なくお問い合わせください。</h2>
+<h3><img src="./assets/phone.png" alt="">048-758-2008</h3>
+    <p>受付時間：9:00〜18:00</p>
+  <div style="gap: 16px;" class="display">
+      <a href="#" class="button"><img style="padding-right: 4px;" src="./assets/mailWhite.png" alt="">メールでお問い合わせ</a>
+        <a href="#" class="button"><img style="padding-right: 4px;" src="./assets/LineIcon.png" alt="">LINEでお問い合わせ</a>
+  </div>
+
+  </div>
+</section>
+  <!-- === Calendar Section === -->
+  <section class="calendar-section">
+    <h2>営業日カレンダー</h2>
+        <p class="subtitle">Calendar</p>
+
+    <p>■…定休日です。</p>
+
+    <div class="calendar-container">
+      <!-- May -->
+      <div class="calendar">
+        <h3>2025年5月</h3>
+        <table>
+          <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+          <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td class="holiday">3</td></tr>
+          <tr><td class="holiday">4</td><td class="holiday">5</td><td class="holiday">6</td><td>7</td><td>8</td><td>9</td><td class="holiday">10</td></tr>
+          <tr><td class="holiday">11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="holiday">17</td></tr>
+          <tr><td class="holiday">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="holiday">24</td></tr>
+          <tr><td class="holiday">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="holiday">31</td></tr>
+        </table>
+      </div>
+
+      <!-- June -->
+      <div class="calendar">
+        <h3>2025年6月</h3>
+        <table>
+          <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+          <tr><td class="holiday">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="holiday">7</td></tr>
+          <tr><td class="holiday">8</td><td>9</td><td>10</td><td class="holiday">11</td><td>12</td><td>13</td><td class="holiday">14</td></tr>
+          <tr><td class="holiday">15</td><td class="holiday">16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="holiday">21</td></tr>
+          <tr><td class="holiday">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Shopping Guide === -->
+  <div class="guide-container">
+    <h2>ご利用ガイド</h2>
+
+    <p class="subtitle">Shopping Guide</p>
+
+    <div class="guide-sections">
+      <!-- Shipping -->
+      <div class="guide-section">
+        <h3>送料について</h3>
+        <p><strong>東京急便</strong><br>配送は東京急便にてお届けいたします。送料は全国一律525円頂いております。1回のお買い上げ商品の合計金額が10,000円以上の場合は送料無料となります。</p>
+        <p><strong>日本急便</strong><br>送料は全国一律525円頂いております。1回のお買い上げ商品の合計金額が10,000円以上の場合は送料無料となります。</p>
+      </div>
+
+      <!-- Returns -->
+      <div class="guide-section">
+        <h3>返品について</h3>
+        <p><strong>不良品</strong><br>商品到着後速やかにご連絡ください。商品に欠陥がある場合を除き、返品には応じかねますのでご了承ください。</p>
+        <p><strong>返品期限</strong><br>商品到着後7日以内とさせていただきます。</p>
+        <p><strong>返品送料</strong><br>お客様都合による返品につきましてはお客様のご負担とさせていただきます。不良品に該当する場合は当方で負担いたします。</p>
+      </div>
+
+      <!-- Payment -->
+      <div class="guide-section">
+        <h3>お支払いについて</h3>
+        <p><strong>商品代引</strong><br>商品が到着しましたら配達員へ商品代金をお支払いください。</p>
+        <p><strong>銀行振込</strong><br>購入後にお送りさせて頂きますご注文確認メールに記載されております弊社指定の銀行口座へご請求金額をお振込み下さい。</p>
+        <p><strong>クレジット</strong><br><img src="./assets/cards.png" alt=""> <br/>
+            がご利用いただけます。分割払い、リボ払い可能です。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- === Footer === -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="./assets/logo.png" alt="Sone Doll Logo">
+        <div class="social-icons2">
+          <img class="social-icons1" src="./assets/Instagram.png" alt=""></a>
+       <img class="social-icons1" src="./assets/facebook.png" alt=""></a>
+        <img class="social-icons1" src="./assets/LineIcon.png" alt=""></a>
+         <img class="social-icons1" src="./assets/Twitter.png" alt=""></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">雛人形</a>
+        <a href="#">手芸材料</a>
+        <a href="#">特定商取引法に基づく表記</a>
+        <a href="#">五月人形</a>
+        <a href="#">盆ちょうちん</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">羽子板</a>
+        <a href="#">店舗案内</a>
+        <a href="#">破魔弓</a>
+        <a href="#">カタログ請求</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 soneningyo</p>
+  </footer>
+       
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="global.js"></script>
+</body>
+</html>
