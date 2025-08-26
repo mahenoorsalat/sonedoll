@@ -12,9 +12,7 @@
   }
 
 
-.mobile-nav-list:last-child{
-    display: block;
-}
+
   .slider-dots {
       visibility: hidden;
   }
@@ -3405,7 +3403,7 @@
       }
 
       .about-title .vertical-title {
-        
+     
           font-size: 24px;
           margin-left: 0;
           margin-bottom: 10px;
@@ -3516,12 +3514,7 @@
           text-align: center;
       }
 
-      .about-title .vertical-title {
-          writing-mode: horizontal-tb;
-          font-size: 24px;
-          display: block;
-          margin-bottom: 10px;
-      }
+ 
 
       .about-text {
           height: auto;
@@ -3699,6 +3692,7 @@
 
   /* Mobile styles (max-width: 768px) */
   @media (max-width: 768px) {
+  
         .hero-section1, .hero-section2
  {
         background: linear-gradient(to top, #F5F2EC 71%, transparent 50%);

@@ -301,18 +301,21 @@ function initializeThumbnails() {
 
 
 // Mobile Nav Accordion (JS only)
+// Mobile Nav Accordion (JS only)
 function initializeMobileNavAccordion() {
+  const sections = document.querySelectorAll(".mobile-nav-section");
   const titles = document.querySelectorAll(".mobile-nav-title");
 
-  // hide all nav lists initially
-  document.querySelectorAll(".mobile-nav-list").forEach(list => {
+  // hide all nav lists initially EXCEPT the last one
+  document.querySelectorAll(".mobile-nav-list").forEach((list, index) => {
+    // Skip hiding the last mobile-nav-list
+    if (index === document.querySelectorAll(".mobile-nav-list").length - 1) {
+      return; // Don't hide the last one
+    }
     list.style.display = "none";
   });
 
   titles.forEach((title, index) => {
-    // ❌ Skip last one
-    if (index === titles.length - 1) return;
-
     title.addEventListener("click", () => {
       const section = title.parentElement;
       const list = section.querySelector(".mobile-nav-list");
@@ -320,7 +323,12 @@ function initializeMobileNavAccordion() {
 
       if (!list) return;
 
-      // toggle open/close
+      // Check if this is the last section - if so, don't implement accordion functionality
+      if (index === sections.length - 1) {
+        return; // Skip accordion functionality for the last section
+      }
+
+      // toggle open/close for all other sections
       if (list.style.display === "block") {
         list.style.display = "none";
         if (arrow) arrow.style.transform = "rotate(180deg)";
