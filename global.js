@@ -29,7 +29,7 @@ function initializeMobileMenu() {
     // Handle window resize
     window.addEventListener('resize', function() {
         const mobileNav = document.getElementById('mobileNav');
-        if (mobileNav && window.innerWidth > 768) {
+        if (mobileNav && window.innerWidth > 1440) {
             mobileNav.classList.remove('active');
         }
     });
@@ -862,7 +862,7 @@ class MobileProductSlider {
     updateView() {
         if (!this.isInitialized) return;
 
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= 1440;
         
         this.sliders.forEach((sliderData) => {
             if (!sliderData) return;
@@ -1006,7 +1006,7 @@ document.addEventListener('visibilitychange', function() {
 // Optional: Auto-play functionality for all sliders (uncomment if needed)
 /*
 setInterval(() => {
-    if (window.innerWidth <= 768 && productSlider && productSlider.isInitialized) {
+    if (window.innerWidth <= 1440 && productSlider && productSlider.isInitialized) {
         productSlider.sliders.forEach((_, index) => {
             productSlider.nextSlide(index);
         });

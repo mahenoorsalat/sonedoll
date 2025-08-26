@@ -3205,6 +3205,30 @@
   /* ===== RESPONSIVE STYLES ===== */
   /* Responsive Design */
   @media (max-width: 1400px) {
+    .store-image {
+    overflow: hidden;
+    position: absolute;
+    top: -320px;
+    right: -72px;
+    z-index: 1;
+}
+    .catalog-products-grid {
+        display: grid
+;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .hero-image1 img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+}
       .showcase-container {
           width: 100%;
           max-width: 1200px;
@@ -3273,6 +3297,11 @@
           left: 50px;
       }
 
+
+    .ig-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
       .news-section {
           padding: 20px 50px;
       }
