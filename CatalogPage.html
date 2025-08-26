@@ -10,7 +10,7 @@
 </head>
 <body>
 
-      <!-- Header -->
+          <!-- Header -->
         <header class="header">
             <div class="header-top">
                        <div class="mobile-menu-btn"
@@ -19,7 +19,8 @@
                             <span></span>
                             <span></span>
                         </div>
-                <div class="logo">
+               <div class="nav-logo">
+                 <div class="logo">
                     <img src="assets/logo.png" alt="Logo">
                 </div>
 
@@ -31,6 +32,7 @@
                     <a href="#">手芸材料</a>
                     <a href="#">盆ちょうちん</a>
                 </nav>
+               </div>
 
                 <div class="header-right">
                     <div class="header-info">
@@ -67,10 +69,23 @@
         </header>
 
         <!-- Mobile Navigation -->
-          <nav class="mobile-nav" id="mobileNav">
-            <div class="mobile-nav-header">
+        <nav class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-header" >
                 <div class="logo"><img src="./assets/logo.png" alt=""></div>
+                 
+                            
+                            <div style="display: flex; gap:6px; align-items:center">
+                                <div class="social-icons"> <span class="icon"><img
+                                        src="assets/person.png" alt></span>
+                            </div>
+                            
+                            <div class="social-icons"> <span class="icon"><img
+                                        src="assets/cart.png" alt></span>
+                            </div>
+                        
+
                 <div class="close-btn" onclick="toggleMobileMenu()">✕</div>
+                            </div>
             </div>
 
             <div class="search-container">
@@ -215,7 +230,8 @@
                     <p class="catalog-contact-description">
                         ご希望のカタログをダウンロードいただくか、
                         お電話またはフォームよりお気軽にお申し込みください。
-                        送料無料でお届けいたします。
+                        <br/>
+                     送料無料でお届けいたします。
                     </p>
                 </div>
     <div class="catalog-contact-buttons">
@@ -342,7 +358,24 @@
     </div>
     <p class="copyright">© 2025 soneningyo</p>
   </footer>
-       
+       <!-- Floating Cart Button -->
+<div class="mokab-floating-wrapper">
+ 
+    
+    <!-- Mobile Icon -->
+    <div class="mokab-floating-small">
+        <img src="assets/phone.png" alt="Phone">
+    </div>
+   <!-- Line Icon -->
+    <div class="mokab-floating-small">
+        <img src="assets/LineIcon.png" alt="Line">
+    </div>
+    <!-- Main Cart -->
+    <div class="mokab-floating-cart">
+        <div class="mokab-floating-icon"><img src="assets/Book.png" alt=""></div>
+        <div class="mokab-floating-text">カタログは<br/>こちら</div>
+    </div>
+</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-       <!-- Header -->
+        <!-- Header -->
         <header class="header">
             <div class="header-top">
                        <div class="mobile-menu-btn"
@@ -18,7 +18,8 @@
                             <span></span>
                             <span></span>
                         </div>
-                <div class="logo">
+               <div class="nav-logo">
+                 <div class="logo">
                     <img src="assets/logo.png" alt="Logo">
                 </div>
 
@@ -30,6 +31,7 @@
                     <a href="#">手芸材料</a>
                     <a href="#">盆ちょうちん</a>
                 </nav>
+               </div>
 
                 <div class="header-right">
                     <div class="header-info">
@@ -66,10 +68,23 @@
         </header>
 
         <!-- Mobile Navigation -->
-         <nav class="mobile-nav" id="mobileNav">
-            <div class="mobile-nav-header">
+        <nav class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-header" >
                 <div class="logo"><img src="./assets/logo.png" alt=""></div>
+                 
+                            
+                            <div style="display: flex; gap:6px; align-items:center">
+                                <div class="social-icons"> <span class="icon"><img
+                                        src="assets/person.png" alt></span>
+                            </div>
+                            
+                            <div class="social-icons"> <span class="icon"><img
+                                        src="assets/cart.png" alt></span>
+                            </div>
+                        
+
                 <div class="close-btn" onclick="toggleMobileMenu()">✕</div>
+                            </div>
             </div>
 
             <div class="search-container">
@@ -173,7 +188,7 @@
         <div class="container">
             <div class="award-content">
                 <div class="award-text">
-                    <h2 class="award-title">内閣総理大臣賞・埼玉県知事賞<br>受賞店舗</h2>
+                    <h2 class="award-title">内閣総理大臣賞・埼玉県知事賞<br class="br">受賞店舗</h2>
                     <p class="award-description">当店は駅前に2店舗あり、各店舗ごとに特徴のある人形を取り扱っています。「魅力ある人形創り」をテーマに受賞店の名に恥じぬよう日々精進して制作しております。品数の豊富さは市内随一です。</p>
                 </div>
                 <div class="award-images">
@@ -218,7 +233,9 @@
                         
                         <p>東武野田線岩槻駅改札を出て右（東口）、徒歩圏内に店舗がございます。分からないときは各店舗へご連絡ください。</p>
                         
-                        <p>TEL　048-758-2008　／　FAX　048-758-2786</p>
+                        <p>TEL　048-758-2008　／　<span class="break">
+                            FAX　048-758-2786
+                        </span></p>
                     </div>
                 </div>
 
@@ -286,7 +303,9 @@
                         
                         <p>東武野田線岩槻駅改札を出て右（東口）、徒歩圏内に店舗がございます。分からないときは各店舗へご連絡ください。</p>
                         
-                        <p>TEL　048-756-2786　／　FAX　048-758-2786</p>
+                       <p>TEL　048-758-2008　／　<span class="break">
+                            FAX　048-758-2786
+                        </span></p>
                     </div>
                 </div>
 
@@ -442,11 +461,24 @@
     </div>
     <p class="copyright">© 2025 soneningyo</p>
   </footer>
-    <!-- Catalog Button -->
-    <a href="#" class="catalog-button">
-        <div><img src="./assets/Book.png" alt=""></div>
-        <span>カタログは<br>こちら</span>
-    </a>
+    <!-- Floating Cart Button -->
+<div class="mokab-floating-wrapper">
+ 
+    
+    <!-- Mobile Icon -->
+    <div class="mokab-floating-small">
+        <img src="assets/phone.png" alt="Phone">
+    </div>
+   <!-- Line Icon -->
+    <div class="mokab-floating-small">
+        <img src="assets/LineIcon.png" alt="Line">
+    </div>
+    <!-- Main Cart -->
+    <div class="mokab-floating-cart">
+        <div class="mokab-floating-icon"><img src="assets/Book.png" alt=""></div>
+        <div class="mokab-floating-text">カタログは<br/>こちら</div>
+    </div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 <script src="global.js"></script>

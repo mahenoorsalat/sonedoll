@@ -291,6 +291,48 @@ function initializeThumbnails() {
 
     isThumbnailsInitialized = true;
 }
+  const heartBtns = document.querySelectorAll('.heart-btn');
+
+  heartBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+    });
+  });
+
+
+// Mobile Nav Accordion (JS only)
+function initializeMobileNavAccordion() {
+  const titles = document.querySelectorAll(".mobile-nav-title");
+
+  // hide all nav lists initially
+  document.querySelectorAll(".mobile-nav-list").forEach(list => {
+    list.style.display = "none";
+  });
+
+  titles.forEach((title, index) => {
+    // ❌ Skip last one
+    if (index === titles.length - 1) return;
+
+    title.addEventListener("click", () => {
+      const section = title.parentElement;
+      const list = section.querySelector(".mobile-nav-list");
+      const arrow = title.querySelector("svg");
+
+      if (!list) return;
+
+      // toggle open/close
+      if (list.style.display === "block") {
+        list.style.display = "none";
+        if (arrow) arrow.style.transform = "rotate(180deg)";
+      } else {
+        list.style.display = "block";
+        if (arrow) arrow.style.transform = "rotate(0deg)";
+      }
+    });
+  });
+}
+
+
 
 // Mobile Product Slider Implementation for Multiple Sections
 class MobileProductSlider {
@@ -332,7 +374,7 @@ class MobileProductSlider {
             position: relative;
             width: 100%;
             overflow: hidden;
-            padding: 20px 0;
+            padding: 10px 0;
         `;
 
         // Create slider wrapper
@@ -344,8 +386,8 @@ class MobileProductSlider {
             width: ${reviewSliderData.reviews.length * 100}%;
         `;
 
-        // Create slides with flower decoration
-        reviewSliderData.reviews.forEach((review, index) => {
+        // Create slides (no flower)
+        reviewSliderData.reviews.forEach((review) => {
             const slide = document.createElement('div');
             slide.className = 'mobile-review-slide';
             slide.style.cssText = `
@@ -371,27 +413,6 @@ class MobileProductSlider {
                 margin: 0 auto;
             `;
 
-            // Add flower decoration if it doesn't exist
-            let flowerImg = clonedReview.querySelector('.flower-img');
-            if (!flowerImg) {
-                flowerImg = document.createElement('img');
-                flowerImg.src = './assets/flower.png';
-                flowerImg.alt = 'flower decoration';
-                flowerImg.className = 'flower-img bottom';
-                clonedReview.appendChild(flowerImg);
-            }
-
-            // Style the flower image
-            flowerImg.style.cssText = `
-                position: absolute;
-                width: 60px;
-                height: auto;
-                opacity: 0.8;
-                pointer-events: none;
-                bottom: -20px;
-                right: 16px;
-            `;
-
             slide.appendChild(clonedReview);
             sliderWrapper.appendChild(slide);
         });
@@ -402,10 +423,10 @@ class MobileProductSlider {
         prevButton.innerHTML = '‹';
         prevButton.style.cssText = `
             position: absolute;
-            left: 10px;
+            left: 0px;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.7);
+            background: black;
             color: white;
             border: none;
             border-radius: 50%;
@@ -424,10 +445,10 @@ class MobileProductSlider {
         nextButton.innerHTML = '›';
         nextButton.style.cssText = `
             position: absolute;
-            right: 10px;
+            right: 0px;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.7);
+            background: black;
             color: white;
             border: none;
             border-radius: 50%;
@@ -669,12 +690,12 @@ class MobileProductSlider {
                     width: 100%;
                     height: 250px;
                     background: #F5F2EC;
-                    padding: 30px;
+                    padding: 0px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     border-radius: 8px;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 `;
             }
 
@@ -698,9 +719,9 @@ class MobileProductSlider {
         prevButton.style.cssText = `
             position: absolute;
             left: 10px;
-            top: 50%;
+            top: 33%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.7);
+            background: black;
             color: white;
             border: none;
             border-radius: 50%;
@@ -720,9 +741,9 @@ class MobileProductSlider {
         nextButton.style.cssText = `
             position: absolute;
             right: 10px;
-            top: 50%;
+            top: 33%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.7);
+            background: black;
             color: white;
             border: none;
             border-radius: 50%;
@@ -921,6 +942,8 @@ function initializeAllFunctions() {
     
     // Initialize thumbnails and tabs
     initializeThumbnails();
+
+    initializeMobileNavAccordion();
     
     // Initialize mobile product slider
     if (!productSlider) {
